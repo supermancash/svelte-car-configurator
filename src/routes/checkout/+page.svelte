@@ -50,7 +50,7 @@
                         <b>{eq.id}</b>
                         - {eq.name}
                         <div style="float: right">
-                            <b>{eq.priceInformation.netPrice} USD</b>
+                            <b>{formatter.format(eq.priceInformation.netPrice)}</b>
                         </div>
 
                     </div>

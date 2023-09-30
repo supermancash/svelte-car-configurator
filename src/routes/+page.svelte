@@ -55,18 +55,14 @@
                     Object.entries(data.selectables.vehicleComponents).filter(
                         el => el[1].selected === true && category.categoryName === el[1].componentType)[0][0]
                 ).checked = true;
+                equipmentRemoved.splice(
+                    equipmentRemoved.indexOf(el => el.componentType === category.categoryName),
+                    1);
             }
             equipmentAdded.splice(equipmentAdded.findIndex(el => el.id === code.id), 1);
         }
         console.log(equipmentAdded);
         console.log(equipmentRemoved)
-        /*if (category.cardinality === "EXACTLY_ONE") document.getElementById(
-            Object.entries(data.selectables.vehicleComponents).filter(
-                el => el[1].selected === true && category.categoryName === el[1].componentType)[0][0]
-        ).checked = false;
-        console.log(Object.entries(data.selectables.vehicleComponents).filter(
-            el => el[1].selected === true && category.categoryName === el[1].componentType)[0][0])
-            */
 
     }
 
