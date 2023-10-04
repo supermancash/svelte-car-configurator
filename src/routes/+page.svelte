@@ -84,7 +84,7 @@
 
 <div>
     <h1 style="text-align: center">Configuration page</h1>
-    <div style="margin: auto; width: 10vw">
+    <div style="margin: auto; width: 100vw; text-align: center">
         <h3>
             Powered by
             <span style="color: #FF3E00">
